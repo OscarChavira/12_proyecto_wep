@@ -1,0 +1,75 @@
+.contenido
+{
+    width: 920px;
+    margin: 0 auto;
+}
+nav li{display: inline-block;
+    background-color:aqua;
+    padding: 10px;
+}
+#encabezado
+{
+    height: 150px;
+    background-color: white;
+    
+}
+
+#barra-navegacion
+{
+    height: 50px;
+    background-color: yellow;
+}
+
+#nota-principal
+{
+    height: 300px;
+    background-color: cyan;
+}
+
+#nota-secundarias
+{
+    width: 700px;
+    float: left;
+    display:inline;
+    background-color:blue;
+}
+
+#publicidad
+{
+    width: 220px;
+    float: right;
+    background-color: red;
+}
+
+#pie
+{
+    clear: both;
+}
+#logo-sep{
+    float: left;
+    margin-top: 31px;
+    margin-right:10px;
+}
+
+#titulos *{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#titulos h1{
+    font-size: 1.5em;
+}
+#titulos h2{
+    font-size: 1.3em;
+}
+#titulos h3{
+    font-size: 1.0em;
+}
+#titulos h4{
+    font-size: 0.8em;
+}
+#op a{
+    padding: 10px;
+    background-color: red;
+}
+nav a:hover{background-color: green;}
