@@ -5,31 +5,62 @@
     <title>Proyecto web</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+ nav li {
+     display: inline-block;
+     padding: 10px;
+        }
+     nav a { 
+         display: inline-block;
+     padding: 10px;
+    }
+    nav a: hover
+    { 
+        background-color:deeppink;
+    }
+    </style>
 <body>
-  <div class="contenido">
+  <div class="container block-center">
       <header id="encabezado">
-      <!-- imagen con logo de sep -->
-      <img id="logo-sep" src="imagenes/logo_sep.png" alt="logo sep" width="300px" height="88px">
+      <!-- imagen con logo sep -->
+      <figure>
+      <img id="logo-sep" src="imagenes/logo_sep.png" alt="logo sep" >
+      </figure>
       <!-- textos con titulos -->
       <div id="titulos">
-         <h1>Sitio Oficial del CETis No. 108</h1>
-         <h2>Subsecretaría de Educación Media Superior</h2>
-         <h3>Dirección General de Educación Tecnológica Industrial</h3>
-         <h4>Centro de Estudios Tecnológicos industrial y de servicios No. 108</h4>
-         <h4>"Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H</h4>  
+     <h1>Sitio Oficial del CETis No. 108</h1>     
+     <h2>Subsecretaría de Educación Media Superior</h2> 
+     <h3>Dirección General de Educación Tecnológica Industrial</h3>
+     <h4>Centro de Estudios Tecnológicos industrial y de servicios No. 108</h4>
+     <h4>"Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H</h4>
       </div>
       <!-- imagenes sems-dgeti y cuadro de busqueda -->
+      <section id="busqueda">
+      <figure>
+          <img id="sems-DGETI" src="imagenes/sems_dgeti.png" alt="logo sems DGETI">
+      </figure>
+
+      <input type="text" name="buscar">
+      <button>buscar</button>
+      </section>
       </header>
     <nav id="barra-navegacion">
-        <ul>
-            <li><a id="op" href="">Opcion 1</a></li>
-            <li><a id="op" href="">Opcion 2</a></li>
-            <li><a id="op" href="">Opcion 3</a></li>
+        <ul><!-- unordered list -->
+        <li><a href=""> Inicio </a></li>
+        <li><a href=""> Plantel</a></li>
+        <li><a href=""> Oferta Educativa</a></li>
+        <li><a href="">Almnos</a></li>
+        <li><a href=""> Docentes</a></li>
+        <li><a href=""> Contactos</a></li>
         </ul>
+      
     </nav>
-    <section id="contenido">
+    <main id="contenido">
     <section id="nota-principal">
-        nota principal
+      <figure>
+          <img id="prepa-en-linea" src="imagenes/prepa_en_linea_2016.jpg" alt="prepa en linea" width= 900px;>  
+      </figure> 
+        
     </section>
     <section id="notas-secundarias">
         nota secundarias
@@ -37,7 +68,7 @@
     <aside id="publicidad">
         publicidad
     </aside> 
-    </section>
+    </main>
     <footer id="pie">
         pie de pagina
     </footer>
