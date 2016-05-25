@@ -1,14 +1,18 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
 .container{
     width: 920px;
     margin: 0 auto;
 }
 
 #nota-principal {
-    background-color: gray;
+    background-color:gray;
     border: 10px solid #ddd;
     box-shadow: 0 0 10px #ddd;
     margin-top: 10px;
-    
+    margin-bottom: 10px;
 }
 
 
@@ -21,13 +25,12 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    background-image: url(/imagenes/fondo_menu.png);
 }
-
 
 #barra-navegacion  li {
     display: inline-block;
-    padding: 0;
-    
+    padding: 0px;
 }
 
 
@@ -39,12 +42,14 @@
    color: black;
     text-decoration: none;  
     background-color: darkgray;
-    padding: 10px 20px;
+    padding: 9px 20px;
     transition: 0.5px;
+    margin: 1px;
 }
 
 #barra-navegacion ul {
     padding: 0;
+    margin: 0;
 }
 
 #barra-navegacion >ul >li >a:hover {
@@ -61,8 +66,7 @@
     width: 660px;
     float: left;
     padding: 20px;
-    background-color: darkcyan;
-    height: 260px;
+    /*height: 260px;*/
 }
 
 #publicidad {
@@ -103,3 +107,68 @@ nav a{
 
 ul{border:10px;
 padding:17px; }*/
+#notas-secundarias article{
+    display: flex;
+    box-shadow:0px 2px 3px gray; 
+    background-image: url(/imagenes/separador-nota-secundaria.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+figure{
+     margin: 0 0 10px;
+}
+#notas-secundarias figure{
+    position:relative;
+}
+#notas-secundarias figure span{
+    position: absolute;
+    top:10px;
+    left: -10px;
+    padding: 5px 20px;
+    background-color: lightgray;
+    box-shadow: 1px 1px 3px darkgray;
+}
+#notas-secundarias article div{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#notas-secundarias article div p{
+    text-align: justifyequis;
+}
+#notas-secundarias article h2{
+    font-variant: small-caps;
+    line-height: 0.8em;
+    font-size: 1.8em;
+}
+#notas-secundarias a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#notas-secundarias a{
+    color: firebrick;
+    text-decoration: none;
+}
+.sombra-imagen{
+    box-shadow: 0 0 5px darkgray;
+}
+.ver-mas div{
+    margin: 0 !important;
+    padding:4px 10px 4px 10px !important;
+}
+.ver-mas>div{
+    display: inline-block;
+    background-color: #b92025;
+    padding: 4px;
+}
+.ver-mas>div>div{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1px 20px;
+}
+.ver-mas p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
