@@ -6,7 +6,6 @@ h1,h2,h3,h4,h5,h6,p{
     width: 920px;
     margin: 0 auto;
 }
-
 #nota-principal {
     background-color:gray;
     border: 10px solid #ddd;
@@ -64,23 +63,23 @@ h1,h2,h3,h4,h5,h6,p{
 
 #notas-secundarias {
     width: 660px;
-    float: left;
-    padding: 20px;
-    /*height: 260px;*/
+    /*float: left;*/
+    padding: 10px;
+    min-height:260px;
 }
 
 #publicidad {
-    width: 210px;
-    float: right;
+    width: 260px;
+    /*float: right;*/
     padding: 5px;
-    background-color: firebrick;
-    height: 290px;
+    min-height: 200px;
 }
 
-#pie {
-    clear: both;
-    height: 150px;
-    background-color: darkgreen;
+#programas {
+    height: 200px;
+}
+#programas>img{
+    margin-left: 50px;
 }
 #ecabezado figure, #titulos *
 {
@@ -135,7 +134,7 @@ figure{
     padding-right: 10px;
 }
 #notas-secundarias article div p{
-    text-align: justifyequis;
+    text-align: justify;
 }
 #notas-secundarias article h2{
     font-variant: small-caps;
@@ -155,20 +154,46 @@ figure{
 }
 .ver-mas div{
     margin: 0 !important;
-    padding:4px 10px 4px 10px !important;
+    padding:2.5px 9px 2.5px 9px !important;
 }
 .ver-mas>div{
     display: inline-block;
     background-color: #b92025;
-    padding: 4px;
 }
 .ver-mas>div>div{
     display: inline-block;
-    border: 1px solid white;
+    border:0.5px solid white;
     padding: 1px 20px;
 }
 .ver-mas p{
     text-align: center;
     color: white;
     font-weight: bold;
+}
+.p{
+    padding-bottom:5px;
+}
+#flexible{
+    display: flex;
+}
+.facebook,.twitter{
+    text-indent: -9999px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+}
+.facebook{
+    background: url(/imagenes/facebook_twitter.png); 0 0;
+}
+.twitter{
+    background: url(/imagenes/facebook_twitter.png) -43px 0;
+}
+.facebook:hover{
+    background: url(/imagenes/facebook_twitter.png); 0 -43px;
+}
+.twitter:hover{
+    background: url(/imagenes/facebook_twitter.png) -43px -43px;
+}
+#a{
+    padding: 5px;
 }
